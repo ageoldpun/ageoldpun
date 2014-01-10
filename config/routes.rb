@@ -1,5 +1,5 @@
 Ageoldpun::Application.routes.draw do
-  root 'static_pages#home'
+  root 'static_pages#resume'
   match '/portfolio', to: 'static_pages#portfolio', via: 'get'
   match '/resume',    to: 'static_pages#resume',    via: 'get'
   match '/about',     to: 'static_pages#about',     via: 'get'
