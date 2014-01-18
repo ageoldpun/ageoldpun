@@ -1,0 +1,57 @@
+fieldset
+  position: relative
+  padding: 10px 20px
+
+.field
+  margin: 15px 0 20px 15px
+  position: relative
+
+.actions
+  @extend .field
+  padding: 40px 0
+  margin: 30px 0 0
+  border-top: 2px dotted #ededed
+
+label
+  color: #444
+  display: block
+  font: bold 1.6em $default
+  margin: 0 0 3px
+  &.hidden
+    display: none
+  em
+    color: #666
+  + span
+    display: inline-block
+    margin-left: 6px
+
+select
+  margin-bottom: 10px
+input, select
+  + label
+    width: auto
+    margin-left: 9px
+  &.radio
+    vertical-align: 2px
+    + label
+      display: inline-block
+      text-transform: inherit
+      color: #242424
+      margin: 2px 20px 0 3px
+      font: normal 2.2em $default
+  &.checkbox
+    margin: 10px 2px 0 6px
+    vertical-align: top
+    & + label
+      margin: 0
+      display: inline-block
+      font-weight: 400
+
+textarea
+  width: 600px
+  min-width: 600px
+  max-width: 90%
+  height: 120px
+  min-height: 120px
+  max-height: 300px
+

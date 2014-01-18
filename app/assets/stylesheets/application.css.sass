@@ -1,0 +1,140 @@
+@charset "UTF-8"
+@import "constant"
+
+@import "compass/reset"
+@import "compass/css3"
+
+=blueprint($body_selector: "body")
+  +blueprint-typography($body_selector)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  +blueprint-colors
+
+// Spriting
+
+//@import "sprite/*.png"
+//@include all-sprite-sprites
+  
+// Modularity
+
+@import "general/*"
+
+// Global
+
+*
+  +box-sizing( "border-box" )
+  position: relative
+
+body
+  background: #F5F5F5
+
+// Header
+
+header
+  float: left
+  width: 100%
+  background: $tertiaryColor
+  +box-shadow( #1a1a1a 0 1px 10px 0 )
+  z-index: 2
+.title
+  display: inline-block
+  line-height: $headerHeight
+  a
+    color: #fff
+    text-transform: uppercase
+
+// Global elements
+
+section
+  float: left
+  width: 100%
+
+article, aside
+  vertical-align: top
+  height: 100%
+article
+  float: left
+  width: 70%
+  padding-right: 80px
+  padding-bottom: 40px
+aside
+  float: right
+  width: 30%
+  margin-top: 30px
+  padding: 20px 20px 50px
+  background: #e8e8e5
+  border: 1px solid #d4d4d4
+  hr
+    border-top: 1px solid #d4d4d4
+    border-bottom: 1px solid #fcfcfc
+    width: 113%
+    margin: 15px -20px
+    height: 0px
+    background: none
+
+// Masthead
+
+.masthead
+  h2, h3
+    color: #fff
+    text-shadow: 0 0 12px #000
+  h2
+    font: 700 4.2em $default
+    margin-bottom: 5px
+  h3
+    font: 200 3.2em $default
+    width: 70%
+    margin-bottom: 20px
+
+.main_img
+  width: 100%
+
+.callout
+  position: absolute
+  top: 140px
+  width: 100%
+
+// Main content
+
+.main-content
+  padding-top: 40px
+  padding-bottom: 60px
+
+//
+
+.notification
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  background: $tertiaryColor
+  +background-image( linear-gradient( darken( $tertiaryColor, 6% ), $tertiaryColor ) )
+  color: #fff
+  font: 400 1.5em $default
+  line-height: 2em
+  width: 100%
+  text-align: center
+  z-index: 2
+  &.alert
+    background: #D80707
+    +background-image( linear-gradient( darken( #D80707, 6% ), #D80707 ) )
+
+// Footer
+
+footer
+  background: #ececed
+  border-top: 1px solid #ccc
+  float: left
+  width: 100%
+  padding: 40px 0
+  p
+    margin: 0
+    font-size: 1.2em
+    color: #a7a9aa
+
+//
+
+//@media screen and (max-device-width: 1200px), (max-width: 1200px)
+//  @import "tablet"
+
