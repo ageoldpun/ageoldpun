@@ -29,6 +29,9 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
+    byebug (2.5.0)
+      columnize (~> 0.3.6)
+      debugger-linecache (~> 1.2.0)
     chunky_png (1.2.9)
     cloudfront-invalidator (0.2.0)
       ruby-hmac
@@ -36,10 +39,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    columnize (0.3.6)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    debugger-linecache (1.2.0)
     execjs (2.0.2)
     fssm (0.2.10)
     haml (3.1.8)
@@ -85,6 +90,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   compass
   haml
   spar!
