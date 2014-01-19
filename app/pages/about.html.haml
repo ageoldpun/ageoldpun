@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %title About
+    = stylesheet_link_tag "application"
+    / [if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+  %body
+    %header
+      %h1.title
+        %a(href="/") Paul Ogden
+      %ul.nav
+        %li
+          %a(href="/about") About
+        %li
+          %a(href="/portfolio") Portfolio
+        %li
+          %a(href="/resume") Resume
+        %li
+          %a(href="/contact") Contact
+    %section
+      .wrapper
+
+        .page-heading
+          %h2 About
+        %article
+          %h3 My name is Paul Ogden and I am a recent graduate of Portland Code School.
+          %p For the past 6 months I have been learning full stack web development with a focus on Ruby on Rails.  From the beginning of my programming training I have been practicing Test Driven Development.  This has allowed me to develop an appreciation for the type of code that it helps you to write.
+
+        .paul

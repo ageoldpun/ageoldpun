@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title Portfolio
+    = stylesheet_link_tag "application"
+    / [if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+  %body
+    %header
+      %h1.title
+        %a(href="/") Paul Ogden
+      %ul.nav
+        %li
+          %a(href="/about") About
+        %li
+          %a(href="/portfolio") Portfolio
+        %li
+          %a(href="/resume") Resume
+        %li
+          %a(href="/contact") Contact
+    %section
+      .wrapper
+
+        .page-heading
+          %h2 Portfolio
+        %article
+          %p 
+            %a(href="http://pdx911calls.herokuapp.com" target="_blank") Portland 911 Calls
+
